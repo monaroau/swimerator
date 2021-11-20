@@ -34,8 +34,6 @@ try:
     distances = [25, 50, 75, 100, 150, 200, 400, 500, 800, 1000, 1500]
     strokes = ['IM', 'freestyle', 'backstroke', 'breaststroke', 'butterfly', 'kick', 'pull', 'dives', 'turns']
     strokesWithNoDistance = ['dives', 'turns']
-    randomDistance = distances[random.randint(0, len(distances))-1]
-    randomStroke = strokes[random.randint(0, len(strokes))-1]
     Rimage = Image.new('L', (epd.width, epd.height), 0xFF)
     draw = ImageDraw.Draw(Rimage)
 
@@ -43,6 +41,8 @@ try:
     draw.text((2, 0), 'the Swimerator 3000', font = font24, fill = 0)
     i = 0
     while i < TotalDistance:
+        randomDistance = distances[random.randint(0, len(distances))-1]
+        randomStroke = strokes[random.randint(0, len(strokes))-1]
         if randomStroke in strokesWithNoDistance :
             randomDistance = 0
             randomDistanceString = ''
