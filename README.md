@@ -1,6 +1,23 @@
 ﻿# The swimerator 3000
 This project runs on a raspberry pi with an attached epaper display
 
+## Setup
+Install the followind dependencies
+```
+sudo apt-get update
+sudo apt-get install python3-pip
+sudo apt-get install python3-pil
+sudo apt-get install python3-numpy
+sudo pip3 install RPi.GPIO
+sudo pip3 install spidev
+```
+
+## How to run
+From the root of the project
+```
+python ./app/python/examples/runit.py
+```
+
 ## Based on
 This repository is based on https://github.com/waveshare/e-Paper
 
