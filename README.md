@@ -1,20 +1,14 @@
-﻿# e-Paper  
-waveshare electronics
-![waveshare_logo.png](waveshare_logo.png)
+﻿# The swimerator 3000
+This project runs on a raspberry pi with an attached epaper display
 
-## 中文:  
-Jetson Nano、Raspberry Pi、Arduino、STM32例程
-* RaspberryPi_JetsonNano  
-    > C
-    > Python 
-* Arduino:  
-    > Arduino UNO  
-* STM32:  
-    > STM32F103ZET6 
-    
-更多资料请在官网上搜索:  
-http://www.waveshare.net
+## Based on
+This repository is based on https://github.com/waveshare/e-Paper
 
+## Raspberry Pi
+The Raspberry Pi zero 2 w was used for this project
+
+## e-Paper  
+3.7 inch epaper display from waveshare electronics
 
 ## English:  
 Jetson Nano、Raspberry Pi、Arduino、STM32 Demo:  
