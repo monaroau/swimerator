@@ -427,7 +427,8 @@ class EPD:
             for j in range(0, self.height):
                 for i in range(0, int(self.width / 8)):
                     self.send_data(0xff) 
-            self.load_lut(self.lut_4Gray_GC)
+            #self.load_lut(self.lut_4Gray_GC)
+            self.load_lut(self.lut_1Gray_GC)
             self.send_command(0x22)
             self.send_data(0xC7)
         elif(mode == 1):            #1Gray
