@@ -2,7 +2,7 @@
 This project runs on a raspberry pi with an attached epaper display
 
 ## Setup
-Install the followind dependencies
+Install the following dependencies
 ```
 sudo apt-get update
 sudo apt-get install python3-pip
@@ -16,6 +16,12 @@ sudo pip3 install spidev
 From the root of the project
 ```
 python ./app/python/examples/runit.py
+```
+
+## Crontab
+The weather.py example is running on crontab. To view
+```
+crontab -e
 ```
 
 ## Based on
